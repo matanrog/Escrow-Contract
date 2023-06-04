@@ -1,0 +1,131 @@
+/* Special Elements */
+
+/* Heading with Underline */
+.special-heading {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.special-heading::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #ffb6c1; /* Pastel Pink */
+}
+
+/* Button with Border */
+.special-button {
+  background-color: #87cefa; /* Pastel Blue */
+  color: white;
+  border: 2px solid #87cefa; /* Pastel Blue */
+  transition: background-color 0.3s, color 0.3s;
+  padding: 12px 24px; /* Increased button size */
+  font-size: 16px; /* Increased font size */
+}
+
+.special-button:hover {
+  background-color: #ff7f50; /* Coral */
+  border-color: #ff7f50; /* Coral */
+}
+
+/* Updated Styles */
+
+body {
+  background-color: #ffe0b2; /* Light Orange */
+  display: flex;
+  justify-content: center; /* Align app in the center horizontally */
+  align-items: center; /* Align app in the center vertically */
+  min-height: 100vh; /* Ensure full-height display */
+  font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+}
+
+.app-container {
+  max-width: 600px; /* Adjust the max width of the app container */
+}
+
+.contract,
+.existing-contracts {
+  margin: 20px;
+  padding: 40px;
+  border: 1px solid #ddd;
+  background-color: #90ee90; /* Light Green */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Increased border radius */
+}
+
+h1 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee; /* Increased border thickness */
+  font-size: 24px; /* Increased font size */
+  color: white; /* White text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Text shadow for pop-out effect */
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: white; /* White text */
+  margin: 20px 0;
+  font-size: 14px; /* Changed label font size */
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+}
+
+.button {
+  background-color: #90ee90; /* Light Green */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 16px; /* Increased button font size */
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 8px; /* Increased border radius */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+}
+
+.button:hover {
+  background-color: #ffa07a; /* Light Salmon */
+}
+
+.existing-contract ul {
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #f5f5f5;
+  list-style: none;
+  border-radius: 8px; /* Increased border radius */
+}
+
+.existing-contract ul > li {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+
+.existing-contract ul > li > div {
+  margin: 0 5px;
+}
+
+.existing-contract ul > li > :first-child {
+  font-weight: bold;
+}
+
+.existing-contract .complete {
+  color: #5aa75a;
+  text-align: center;
+}
